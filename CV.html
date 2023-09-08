@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumes</title>
+
+    <style>
+        body{
+            font-family: 'Kanit', sans-serif;
+            font-size: 1.5rem;
+        }
+        .container{
+            display: grid;
+            height: 100%;
+            width: 100%;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: 100%;
+        }
+
+        .col2{
+            background-color: #ebc1b1;
+            padding-left: 100px;
+            padding-right: 100px;
+            grid-area: 1/1/2/2;
+        }
+
+        .col1{
+            padding-left: 100px;
+            padding-right: 100px;
+            grid-area: 1/2/2/3;
+        }
+
+        .left-list{
+            list-style: none;
+        }
+
+        h1{
+            font-family: 'EB Garamond', serif;
+            font-size: 5rem;
+            letter-spacing: 1.5rem;
+            color: #EB9776;
+        }
+
+        h2{
+            font-family: 'EB Garamond', serif;
+        }
+
+        ul{
+            margin-bottom: 6rem;
+        }
+
+        li{
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 991px){
+            .container{
+                display: block;
+            }
+
+            .col2{
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-left: 0;
+            }
+
+            .col2-content{
+                padding-left: 20%;
+            }
+            .col1{
+                padding-left: 20%;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="col1">
+            <h1>AMIT COHEN</h1>
+            <p>TEAM LEAD, COMPUTER SCIENCE STUDENT AND CURRENTLY STUDYING WEB DEVELOPING</p>
+            <hr class="horizontal-rule">
+            <h2>CAREER OBJECTIVE</h2>
+            <p>A Bachelor's degree student in computer science and currenty learning web development. Seeking
+                for an opportunity to apply my knowledge, excel my skills and get new ones. A curious person,
+                autodidact, goal oriented who is willing to jump to the cold water in order to succeed.
+            </p>
+            <h2>EXPERIENCE</h2>
+            <h3>ISRAELI AIRPORT AUTHORITY</h3>
+            <h4>Shift Manager (Feb 2021 - Present)</h4>
+            <ul>
+                <li>Leading a team of 25 - 45 members and deputy managers</li>
+                <li>Assigning daily tasks for my team members and ensuring that ther complete their tasks based on our KPIs and security
+                    guidelines
+                </li>
+                <li>Making 1:1 meetings with each member of my team, giving them feedback and understanding their
+                    needs and goals
+                </li>
+                <li>Resolving problems on daily basis and troubleshooting issues that are occurring with the shift
+                </li>
+                <li>Preparing weekly and monthly reports using Excel</li>
+                <li>Reporting and reviewing weekly goals with the Security Unit Manager</li>
+            </ul>
+
+            <h3>Security Analyst (Aug 2015 - Feb 2021)</h3>
+            <ul>
+                <li>Handled unattended luggage to prevent a potential threat</li>
+                <li>Patrolled assigned areas following the security gudielines</li>
+                <li>Performed security checks using diverse technologies</li>
+                <li>Analyzing behavioral patterns</li>
+            </ul>
+
+            <h2>MILITARY SERVICE</h2>
+            <ul>
+                <li>Mandatory Military Service - Combat soldier in Combat Armored Corps, IDF (2010-2013)</li>
+                <li>Standing Military Service - Company sergeant major in a Combat armored Corpes's company, IDF (2013)</li>
+            </ul>
+        </div>
+
+        <div class="col2">
+            <div class="col2-content">
+                <h2>CONTACT</h2>
+                <ul class="left-list">
+                    <li><img src="./images/whatsapp.svg" alt="whatsapp"> +972-52-336-9160</li>
+                    <li><img src="./images/geo-alt-fill.svg" alt="location"> Bat Yam, Israel</li>
+                    <li><img src="./images/envelope.svg" alt="email"> airamit90@gmail.com</li>
+                    <li><img src="./images/linkedin.svg" alt="linkedin"> <a
+                            href="https://www.linkedin.com/in/amitcohen90">LinkedIn</a></li>
+                </ul>
+            
+                <h2>EDUCATION</h2>
+                <h3>The Open University of Israel</h3>
+                <ul class="left-list">
+                    <li>BS - Computer Science: 2018 - Present</li>
+                </ul>
+            
+                <h2>LANGUAGES</h2>
+                <ul class="left-list">
+                    <li>Hebrew - Native</li>
+                    <li>English - Fluent</li>
+                    <li>Spanish -Basic</li>
+                </ul>
+            
+                <h2>SKILLS</h2>
+                <ul>
+                    <li>JAVA</li>
+                    <li>C</li>
+                    <li>SQL</li>
+                    <li>Data Structure & Algorithms</li>
+                    <li>Critical and Analytic Thinking</li>
+                    <li>Detail & Goal oriented</li>
+                    <li>Team Player</li>
+                    <li>Team Management</li>
+                    <li>Proactive</li>
+                    <li>Ownership</li>
+                    <li>Assertiveness</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
