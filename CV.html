@@ -14,30 +14,38 @@
             display: grid;
             height: 100%;
             width: 100%;
-            grid-template-columns: 40% 60%;
+            grid-template-columns: 30% 70%;
             grid-template-rows: 100%;
         }
 
         .col2{
             background-color: #ebc1b1;
-            padding-left: 100px;
-            padding-right: 100px;
+            padding-left: 80px;
+            padding-right: 80px;
             grid-area: 1/1/2/2;
         }
-
-        .col1{
-            padding-left: 100px;
-            padding-right: 100px;
-            grid-area: 1/2/2/3;
-        }
-
+        
         .left-list{
             list-style: none;
         }
 
+        .right-list li, .left-list li{
+            font-weight: bold;
+        }
+
+        .right-list span, .left-list span{
+            font-weight: normal;
+        }
+
+        .col1{
+            padding-left: 80px;
+            padding-right: 80px;
+            grid-area: 1/2/2/3;
+        }
+
         h1{
             font-family: 'EB Garamond', serif;
-            font-size: 5rem;
+            font-size: 4rem;
             letter-spacing: 1.5rem;
             color: #EB9776;
         }
@@ -54,15 +62,36 @@
             margin-bottom: 2rem;
         }
 
+        @media (max-width: 1200px){
+            .col2{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            body{
+                font-size: 1.2rem;
+            }
+            h1{
+                font-size: 3rem;
+            }
+
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+
         @media (max-width: 991px){
             .container{
-                display: block;
+                display: flex;
+                flex-direction: column;
             }
 
             .col2{
                 padding-top: 30px;
                 padding-bottom: 30px;
                 padding-left: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: left;
             }
 
             .col2-content{
@@ -84,14 +113,101 @@
 <body>
     <div class="container">
         <div class="col1">
-            <h1>AMIT COHEN</h1>
+            <div class="h1-container">
+                <h1>AMIT COHEN</h1>
+            </div>
             <p>TEAM LEAD, COMPUTER SCIENCE STUDENT AND CURRENTLY STUDYING WEB DEVELOPING</p>
             <hr class="horizontal-rule">
-            <h2>CAREER OBJECTIVE</h2>
-            <p>A Bachelor's degree student in computer science and currenty learning web development. Seeking
-                for an opportunity to apply my knowledge, excel my skills and get new ones. A curious person,
-                autodidact, goal oriented who is willing to jump to the cold water in order to succeed.
+            <h2>OBJECTIVE</h2>
+            <p>To secure a challenging and dynamic position in the high-tech industry, with a particular interest 
+               in full stack and backend development roles. However, I maintain an open mind and eagerness to 
+               explore various opportunities within the industry, leveraging my skills in software development, 
+               problem-solving, and team collaboration to contribute effectively and drive innovation.
             </p>
+
+            <h2>EDUCATION</h2>
+            <ul class="right-list">
+                <li>Bachelor of Science in Computer Science (Ongoing)
+                    <ul> <br>
+                        <li>Open University of Israel, 2018 - Present</li>
+                        <li> Relevant coursework:
+                            <ul> <br>
+                                <li>Introduction to Computer Science Using Java</li>
+                                <li>System Programming Laboratory <span>(Description: This course focuses on 
+                                    advanced programming concepts using the C language, with an emphasis on 
+                                    system-level programming and hands-on project work. Topics include memory 
+                                    management, file I/O, process control, and inter-process communication 
+                                    (IPC).)</span></li>
+                                <li>Data Structures and Introduction to Algorithms</li>
+                                <li>Advanced Programming with Java</li>
+                                <li>Algorithms</li>
+                                <li>Database Systems</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Full Stack Development Course (ongoing)
+                    <ul> <br>
+                        <li>Udemy, 2023</li>
+                        <li>Description: <span>Comprehensive training to become a Full-Stack Web Developer 
+                            covering essential technologies such as HTML, CSS, JavaScript, Node.js, React, 
+                            PostgreSQL, and Web3 for Decentralized Applications (DApps). Gain expertise in 
+                            front-end and back-end development, enabling you to build dynamic and interactive web 
+                            applications.</span></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>SKILLS</h2>
+            <ul class="right-list">
+                <li>Programming Languages: <span>Java, JavaScript, C</span></li>
+                <li>Web Development: <span>HTML, CSS, Node.js, Express.js, EJS</span></li>
+                <li>Database: <span>SQL</span></li>
+                <li>Version Control: <span>GitHub</span></li>
+                <li>Algorithms and Data Structures</li>
+                <li>Personal Attributes:
+                    <ul> <br>
+                        <li>Proactive</li>
+                        <li>Goal-oriented</li>
+                        <li>Assertive</li>
+                        <li>Leadership and Team Management Skills <span>(Demonstrated as a Team Leader in current 
+                            role)</span></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>PROJECTS</h2>
+            <ul class="right-list">
+                <li> Project Name: <span>Trivia Game</span>
+                    <ul>
+                        <li>Description: <span>Developed a web-based trivia game where users can test their 
+                            knowledge by answering a variety of trivia questions. The game features a 
+                            user-friendly interface and dynamically generated questions retrieved from a public 
+                            API. Implemented server-side logic using Node.js and Express.js, along with EJS for 
+                            dynamic content rendering. HTML, CSS, and JavaScript were utilized to create 
+                            interactive and visually appealing elements.</span>
+                        </li>
+                        <li>Technologies Used: <span>HTML, CSS, JavaScript, Node.js, Express.js, EJS</span></li>
+                        <li>GitHub Repository: <a href="https://github.com/AmitCohen90/Trivia-game"><span>https://github.com/AmitCohen90/Trivia-game</span></a></li>
+                    </ul>
+                </li>
+                <li> Project Name: <span>To-Do List</span>
+                    <ul>
+                        <li>
+                            Description: <span>Created an interactive To-Do List application leveraging HTML, 
+                            CSS, and JavaScript (Node.js, Express.js, EJS) technologies. The project enables 
+                            users to seamlessly add, remove, and edit tasks, enhancing task management efficiency. 
+                            Hosted the project on GitHub for version control and collaboration. Demonstrated 
+                            competencies in full-stack development, incorporating Node.js and Express.js for 
+                            server-side functionality, and employing modern web development principles for 
+                            optimal user experience.</span>
+                        </li>
+                        <li>Technologies Used: <span>HTML, CSS, JavaScript, Node.js, Express.js, EJS</span></li>
+                        <li>GitHub Repository: <a href="https://github.com/AmitCohen90/todo-list-app.git"><span>https://github.com/AmitCohen90/todo-list-app.git</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+
             <h2>EXPERIENCE</h2>
             <h3>ISRAELI AIRPORT AUTHORITY</h3>
             <h4>Shift Manager (Feb 2021 - Present)</h4>
@@ -128,39 +244,18 @@
             <div class="col2-content">
                 <h2>CONTACT</h2>
                 <ul class="left-list">
-                    <li><img src="./images/whatsapp.svg" alt="whatsapp"> +972-52-336-9160</li>
-                    <li><img src="./images/geo-alt-fill.svg" alt="location"> Bat Yam, Israel</li>
-                    <li><img src="./images/envelope.svg" alt="email"> airamit90@gmail.com</li>
-                    <li><img src="./images/linkedin.svg" alt="linkedin"> <a
+                    <li>Phone: <span>+972-52-336-9160</span></li>
+                    <li>Address: <span>Masaryk 3/8, Bat Yam, Israel</span></li>
+                    <li>Email: <span>airamit90@gmail.com</span></li>
+                    <li>LinkedIn: <a
                             href="https://www.linkedin.com/in/amitcohen90">LinkedIn</a></li>
-                </ul>
-            
-                <h2>EDUCATION</h2>
-                <h3>The Open University of Israel</h3>
-                <ul class="left-list">
-                    <li>BS - Computer Science: 2018 - Present</li>
                 </ul>
             
                 <h2>LANGUAGES</h2>
                 <ul class="left-list">
-                    <li>Hebrew - Native</li>
-                    <li>English - Fluent</li>
-                    <li>Spanish -Basic</li>
-                </ul>
-            
-                <h2>SKILLS</h2>
-                <ul>
-                    <li>JAVA</li>
-                    <li>C</li>
-                    <li>SQL</li>
-                    <li>Data Structure & Algorithms</li>
-                    <li>Critical and Analytic Thinking</li>
-                    <li>Detail & Goal oriented</li>
-                    <li>Team Player</li>
-                    <li>Team Management</li>
-                    <li>Proactive</li>
-                    <li>Ownership</li>
-                    <li>Assertiveness</li>
+                    <li>Hebrew - <span>Native</span></li>
+                    <li>English - <span>Fluent</span></li>
+                    <li>Spanish - <span>Basic</span></li>
                 </ul>
             </div>
         </div>
